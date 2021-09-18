@@ -22,6 +22,11 @@ pipeline {
                 sh 'echo aca iria el test'
             } 
         }
+        stage('Aprobar deploy'){
+            steps{
+                input message: 'Finished using the web site? (Click "Proceed" to continue)'
+            }
+        }
         stage('Deploy'){
             steps{
                 sh 'npm run start'
