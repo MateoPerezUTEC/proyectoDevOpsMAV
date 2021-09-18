@@ -15,5 +15,8 @@ pipeline {
                 sh 'npm install'
             }
         }
+        stage('Test'){
+            sh 'echo aca iria el test'
+        }
     }
 }
