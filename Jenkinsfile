@@ -4,9 +4,9 @@ pipeline {
             image 'node'
             args '-p 7000:7000'
         }
+    }
     enviroment{
         HOME = '.'
-    }
     }
 
     stages{
