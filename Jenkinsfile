@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Test'){
             steps{
-                sh 'echo aca iria el test'
+                sh 'npm run test'
             } 
         }
         stage('Aprobar deploy'){
