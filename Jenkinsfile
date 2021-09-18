@@ -3,8 +3,6 @@ pipeline {
         docker{
             image 'node'
             args '-p 7000:7000'
-
-            image 'mysql'
         }
     }
     environment{
@@ -20,6 +18,11 @@ pipeline {
         stage('Test'){
             steps{
                 sh 'echo aca iria el test'
+            } 
+        }
+        stage('Deploy'){
+            steps{
+                sh 'npm run start'
             }
         }
     }
