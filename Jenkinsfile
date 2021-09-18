@@ -5,7 +5,7 @@ pipeline {
             args '-p 7000:7000'
         }
     }
-    enviroment{
+    environment{
         HOME = '.'
     }
 
