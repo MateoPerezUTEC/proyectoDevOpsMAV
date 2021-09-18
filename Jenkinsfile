@@ -16,7 +16,9 @@ pipeline {
             }
         }
         stage('Test'){
-            sh 'echo aca iria el test'
+            steps{
+                sh 'echo aca iria el test'
+            }
         }
     }
 }
