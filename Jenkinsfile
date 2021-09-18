@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Aprobar deploy'){
             steps{
-                input message: 'Finished using the web site? (Click "Proceed" to continue)'
+                input message: 'Las pruebas fueron satisfactorias. Aprobar el deploy? (Click "Proceed" para continuar)'
             }
         }
         stage('Deploy'){
